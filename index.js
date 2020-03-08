@@ -67,7 +67,6 @@ const mingInfo = {
         }
     ]
 }
-console.log(mingInfo.gender);
 // using the keys that I labeled
 
 mingInfo.gender = "Male"
