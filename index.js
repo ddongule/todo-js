@@ -72,5 +72,4 @@ const mingInfo = {
 mingInfo.gender = "Male"
 // 이렇게 안에 데이터를 바꿀 수 있당!
 console.log(mingInfo.gender);
-
-console.log(mingInfo)
+console.log(mingInfo);
