@@ -171,9 +171,11 @@ console.log(title);
 
 // 자바스크립트는 나의 html 들을 가져와 객체로 만든다. 
 
-title.innerHTML = "Hi! from JS"
+title.innerHTML = "Hi! from JS";
 // 요렇게 하면 title 안의 글자가 이 바뀐다.
 console.dir(title);
-title.style.color = "red"
+title.style.color = "red";
 
 document.title = "coool";
+// document.querySelector("#title")
+// document.getElementByClassName("title")
