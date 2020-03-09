@@ -139,3 +139,41 @@ console.log(greetMk);
 
 
 
+// ----
+const calculator = {
+    plus : function(a, b){
+        return a + b;
+    }
+}
+
+const plus = calculator.plus(5,5); 
+console.log(plus)
+
+// ----
+// console.log 이외에도 브라우저에서 우리에게 제공하는 함수들이 있다.
+// HTML을 다루는 함수들에 대해 공부를 좀 해보자.
+
+// css와 같이 js에서도 속성을 선택해서 html을 바꿀 수 있다.
+
+console.log(document); 
+// 현재 페이지의 html 도큐먼트를 보여준다.
+
+const title = document.getElementById("title");
+
+console.log(title);
+
+// DOM : Document Object Module (문서 객체 모델) - HTML, XML 문서의 프로그래밍 interface 이다.
+// 추가 설명 
+// 내가 작성한 코드가 브라우저에 의해 파싱되면 DOM이 된다.
+// 브라우저에서 지원하는 개발자 툴에서 보이는 것이 DOM이다.
+// 즉, JS는 브라우저가 읽고 어떤 작업을 할 수 있는 언어이고, DOM은 이 작업이 이루어지는 장소이다.
+
+
+// 자바스크립트는 나의 html 들을 가져와 객체로 만든다. 
+
+title.innerHTML = "Hi! from JS"
+// 요렇게 하면 title 안의 글자가 이 바뀐다.
+console.dir(title);
+title.style.color = "red"
+
+document.title = "coool";
