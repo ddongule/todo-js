@@ -73,3 +73,69 @@ mingInfo.gender = "Male"
 // 이렇게 안에 데이터를 바꿀 수 있당!
 console.log(mingInfo.gender);
 console.log(mingInfo);
+
+// console은 mingInfo와 같이 object이다.
+// 다만 다른 점이 있다면 log 는 내장 function 인 것!
+
+// 함수란?
+// 어떤 것의 기능
+// 어떤 걸 수행하려는 한 부분
+// 내가 원하는 만큼 쓸 수 있는 코드 
+
+// 안녕 하는 함수!를 만들어 보자.
+function sayHello(){
+    console.log("Hello!");
+}
+sayHello("여기 들어가는건 인자, 즉 argument");
+console.log("ming");
+
+// 함수를 커스터마이징 하는 법
+// 우리 함수는 인자(변수 같은 것)를 받아서 
+// 우리가 주는 값을 저장시켜.
+
+// function sayHello("인자가 들어갈 자리"){
+//     console.log("Hello!");
+// }
+
+function sayHello(potato){
+    console.log("Hello!", potato);
+}
+
+sayHello("여기 들어가는건 인자, 즉 argument");
+
+function sayHello(potato, chickin){
+    console.log("Hello!", potato, "you have", chickin);
+}
+sayHello("여기 들어가는건 인자, 즉 argument", 14);
+
+// String을 쓰는 방법
+// 1. `` 
+// 2. "" 
+// 3. ''
+
+// 기존에 "" '' 를 사용하는 방법은 , 혹은 + 를 사용했어야 한다.
+// 근데 계속 그렇게 하는 건 귀찮기도 하고, 힘드니까 `` (백틱)을 사용한다.
+// 그러면 아래와 같이 쭉 이어 쓸 수 있다.
+function sayHello(name, age){
+    console.log(`Hello ${name} you are ${age} years old`);
+}
+
+// 이제 console.log 와 return의 차이점을 공부해 보자.
+function sayHello(name, age){
+    console.log(`Hello ${name} you are ${age} years old`);
+}
+
+function sayHello(name, age){
+    return `Hello ${name} you are ${age} years old`;
+}
+
+const greetMk = sayHello("Minkyung", 22);
+console.log(greetMk);
+
+// 여기에서 greetMk 는 sayHello의 return 값과 같다.
+// greetMk는 sayHello 함수의 return 값이다.
+// sayHello가 아무것도 반환하지 않기 때문에 greetMk는 undefined가 된다.
+// 두 개의 차이점을 알아야 한다.
+
+
+
