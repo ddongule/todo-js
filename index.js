@@ -83,11 +83,11 @@ console.log(mingInfo);
 // 내가 원하는 만큼 쓸 수 있는 코드 
 
 // 안녕 하는 함수!를 만들어 보자.
-function sayHello(){
-    console.log("Hello!");
-}
-sayHello("여기 들어가는건 인자, 즉 argument");
-console.log("ming");
+// function sayHello(){
+//     console.log("Hello!");
+// }
+// sayHello("여기 들어가는건 인자, 즉 argument");
+// console.log("ming");
 
 // 함수를 커스터마이징 하는 법
 // 우리 함수는 인자(변수 같은 것)를 받아서 
@@ -97,16 +97,16 @@ console.log("ming");
 //     console.log("Hello!");
 // }
 
-function sayHello(potato){
-    console.log("Hello!", potato);
-}
+// function sayHello(potato){
+//     console.log("Hello!", potato);
+// }
 
-sayHello("여기 들어가는건 인자, 즉 argument");
+// sayHello("여기 들어가는건 인자, 즉 argument");
 
-function sayHello(potato, chickin){
-    console.log("Hello!", potato, "you have", chickin);
-}
-sayHello("여기 들어가는건 인자, 즉 argument", 14);
+// function sayHello(potato, chickin){
+//     console.log("Hello!", potato, "you have", chickin);
+// }
+// sayHello("여기 들어가는건 인자, 즉 argument", 14);
 
 // String을 쓰는 방법
 // 1. `` 
@@ -116,21 +116,21 @@ sayHello("여기 들어가는건 인자, 즉 argument", 14);
 // 기존에 "" '' 를 사용하는 방법은 , 혹은 + 를 사용했어야 한다.
 // 근데 계속 그렇게 하는 건 귀찮기도 하고, 힘드니까 `` (백틱)을 사용한다.
 // 그러면 아래와 같이 쭉 이어 쓸 수 있다.
-function sayHello(name, age){
-    console.log(`Hello ${name} you are ${age} years old`);
-}
+// function sayHello(name, age){
+//     console.log(`Hello ${name} you are ${age} years old`);
+// }
 
-// 이제 console.log 와 return의 차이점을 공부해 보자.
-function sayHello(name, age){
-    console.log(`Hello ${name} you are ${age} years old`);
-}
+// // 이제 console.log 와 return의 차이점을 공부해 보자.
+// function sayHello(name, age){
+//     console.log(`Hello ${name} you are ${age} years old`);
+// }
 
-function sayHello(name, age){
-    return `Hello ${name} you are ${age} years old`;
-}
+// function sayHello(name, age){
+//     return `Hello ${name} you are ${age} years old`;
+// }
 
-const greetMk = sayHello("Minkyung", 22);
-console.log(greetMk);
+// const greetMk = sayHello("Minkyung", 22);
+// console.log(greetMk);
 
 // 여기에서 greetMk 는 sayHello의 return 값과 같다.
 // greetMk는 sayHello 함수의 return 값이다.
@@ -140,14 +140,14 @@ console.log(greetMk);
 
 
 // ----
-const calculator = {
-    plus : function(a, b){
-        return a + b;
-    }
-}
+// const calculator = {
+//     plus : function(a, b){
+//         return a + b;
+//     }
+// }
 
-const plus = calculator.plus(5,5); 
-console.log(plus)
+// const plus = calculator.plus(5,5); 
+// console.log(plus)
 
 // ----
 // console.log 이외에도 브라우저에서 우리에게 제공하는 함수들이 있다.
@@ -155,12 +155,12 @@ console.log(plus)
 
 // css와 같이 js에서도 속성을 선택해서 html을 바꿀 수 있다.
 
-console.log(document); 
+// console.log(document); 
 // 현재 페이지의 html 도큐먼트를 보여준다.
 
-const title = document.getElementById("title");
+// const title = document.getElementById("title");
 
-console.log(title);
+// console.log(title);
 
 // DOM : Document Object Module (문서 객체 모델) - HTML, XML 문서의 프로그래밍 interface 이다.
 // 추가 설명 
@@ -171,11 +171,122 @@ console.log(title);
 
 // 자바스크립트는 나의 html 들을 가져와 객체로 만든다. 
 
-title.innerHTML = "Hi! from JS";
+// title.innerHTML = "Hi! from JS";
 // 요렇게 하면 title 안의 글자가 이 바뀐다.
-console.dir(title);
-title.style.color = "red";
+// console.dir(title);
+// title.style.color = "red";
 
 document.title = "coool";
 // document.querySelector("#title")
 // document.getElementByClassName("title")
+
+
+// 지금까지 배운 것들 모두는 event 이다 . 
+
+// function handleResize(){
+//     console.log("I have been resized");
+// }
+
+// window.addEventListener("resize", handleResize); 
+// handleResize() 라고 쓰면 안된다! => 이건 즉시 이 함수를 호출하라는 뜻이고,
+// handleResize 라고 쓰면 resize가 되었을 그 시점에 함수를 호출하라는 뜻이다.
+
+
+// function handleResize(event){
+//     console.log(event);
+//     // 이벤트는 뭘까?
+// }
+
+// title.addEventListener("click", handleClick);
+// function handleClick(){
+//     title.style.color = "blue";
+//     // 타이틀 색깔을 바꿀 수 있지만 다시 되돌리지는 못한다.(지금까지 배운 것을 바탕으로 했을 때)
+//     // 다음 강의를 들어봅시다.
+// }
+
+// if else 에 대해 공부해 보자.
+
+
+if(10 === "10"){
+    console.log("hi");
+} else if (10 === 10) {
+    console.log("ho");
+} else {
+    console.log("머야!");
+}
+
+
+
+// && : 두 가지를 모두 만족시켜야 한다.
+// || : 두 가지 중에 한개라도 만족시키면 된다. 
+if(20 > 5 && "hi" === "hi") {
+    console.log("yes");
+} else {
+    console.log("no")
+}
+
+// = : 할당
+// === : checking
+
+// true && true = true;
+// false && true = false;
+// true && false = false;
+// false && false = false;
+
+// true || true = true;
+// false || true = true;
+// true || false = true;
+// false || false = false;
+
+// prompt : 유저에게 뭔가를 물어볼 수 있는 alert 같은 갓 
+// => 하지만 요즘은 쓰지 않음! 그냥 잠깐 써보는 겨
+
+// const age = prompt("what is your age?");
+// console.log(age)
+
+// if(age >= 18 && age <= 21) {
+//     console.log('you can drink but you should not');
+// } else if (age > 21) {
+//     console.log("drink.");
+// } else {
+//     console.log('too young.');
+// }
+
+
+
+// const BASE_COLOR = "white";
+// const OTHER_COLOR = "blue"
+
+const title = document.querySelector("#title");
+
+// function handleClickTwo(){
+//     const currentColor = title.style.color;
+//     console.log(currentColor);
+//     if (currentColor === BASE_COLOR) {
+//         title.style.color = OTHER_COLOR;
+//     } else {
+//         title.style.color = BASE_COLOR;
+//     }
+// }
+
+// 이런 이벤트들을 찾을 때에는 항상 MDN을 사용하는 것이 좋다. 
+// https://developer.mozilla.org/ko/docs/Web/Events
+
+const CLICKED_CLASS = "clicked";
+
+function handleClickClass() {
+    // const hasClass = title.classList.contains(CLICKED_CLASS);
+    // if (hasClass) {
+    //     title.classList.remove(CLICKED_CLASS) = "";
+    // } else {
+    //     title.classList.add(CLICKED_CLASS);
+    // }
+    // 이거랑 위에 토글이랑 완전 같아.
+    title.classList.toggle(CLICKED_CLASS);
+}
+
+
+function init() {
+    title.addEventListener("click", handleClickClass);
+}
+init();
