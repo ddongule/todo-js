@@ -1,6 +1,6 @@
 // 이론을 끝내고 실제로 만들어보자 .
 
-const clockContainer = document.querySelector('.js-clock');
+const clockContainer = document.querySelector('.js-clock'),
     clockTitle = clockContainer.querySelector('h1');
 
 function getTime() {
@@ -8,7 +8,7 @@ function getTime() {
     const minutes = date.getMinutes();
     const hours = date.getHours();
     const seconds = date.getSeconds();
-    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours} : ${minutes < 10 ? `0${minutes}` : minutes}:${
+    clockTitle.innerText = `${hours<10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${
         seconds < 10 ? `0${seconds}`: seconds 
     }`;
     // 이렇게 if -- else 를 사용하지 않고 작게 사용하는 것을 
