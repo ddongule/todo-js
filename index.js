@@ -11,12 +11,12 @@
 // 한 줄 주석 : // 
 // 많은 줄 주석 : /* */
 
-console.log("I am working");
+// console.log("I am working");
 
 // 변수를 선언할 때에는 const를 사용
 // 진짜 필요할 때에만 let을 사용
 const what = "emojii"; // <- 이모티콘, 숫자, 텍스트 다 넣을 수 있음
-console.log(what);
+// console.log(what);
 
 // Boolean : True, False
 const wat = true; // true = 1, false = 0
@@ -38,14 +38,14 @@ const wednesday = "Wed"
 const thursday = "Thu"
 const friday = "Fri"
 
-console.log(monday, tuesday, wednesday, thursday, friday);
+// console.log(monday, tuesday, wednesday, thursday, friday);
 
 const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true];
-console.log(daysOfWeek);
+// console.log(daysOfWeek);
 
 // Array는 규칙을 가지고 있음
-console.log(daysOfWeek[2]) // Wed가 나오게 됨
-console.log(daysOfWeek[112]) // undefined가 나오게 됨
+// console.log(daysOfWeek[2]) // Wed가 나오게 됨
+// console.log(daysOfWeek[112]) // undefined가 나오게 됨
 
 // [데이터 정렬하기] - Object
 // Array와 Object의 다른 점 : Object에는 각 value에 이름을 줄 수 있음
@@ -71,8 +71,8 @@ const mingInfo = {
 
 mingInfo.gender = "Male"
 // 이렇게 안에 데이터를 바꿀 수 있당!
-console.log(mingInfo.gender);
-console.log(mingInfo);
+// console.log(mingInfo.gender);
+// console.log(mingInfo);
 
 // console은 mingInfo와 같이 object이다.
 // 다만 다른 점이 있다면 log 는 내장 function 인 것!
@@ -208,11 +208,11 @@ document.title = "coool";
 
 
 if(10 === "10"){
-    console.log("hi");
+    // console.log("hi");
 } else if (10 === 10) {
-    console.log("ho");
+    // console.log("ho");
 } else {
-    console.log("머야!");
+    // console.log("머야!");
 }
 
 
@@ -220,9 +220,9 @@ if(10 === "10"){
 // && : 두 가지를 모두 만족시켜야 한다.
 // || : 두 가지 중에 한개라도 만족시키면 된다. 
 if(20 > 5 && "hi" === "hi") {
-    console.log("yes");
+    // console.log("yes");
 } else {
-    console.log("no")
+    // console.log("no")
 }
 
 // = : 할당
